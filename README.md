@@ -10,7 +10,7 @@ Currently :
 * -Added Custom Border Color + 
 * -Added MouseOver and MouseOut Custom Color
 * -Added Draggable Property for ALL form (you can drag and drop whereever you want)
-* -Added Title | TextForm as new property , don't use me.text , use this Me.FormText = ""
+* -Added Title | TextForm as new property , don't use me.text , use this : Me.FormText = ""
 
 
 Note : 
