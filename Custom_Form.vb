@@ -2,6 +2,9 @@
 Imports System.Drawing.Imaging
 Imports System.Runtime.InteropServices
 
+
+'Author  : https://github.com/arsium
+'Make Winform Great Again
 Public Class Custom_Form
     Inherits Form
 
