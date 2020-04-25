@@ -9,9 +9,6 @@ Public Class Custom_Form
         SetStyle(ControlStyles.AllPaintingInWmPaint Or ControlStyles.OptimizedDoubleBuffer Or ControlStyles.ResizeRedraw Or ControlStyles.UserPaint Or ControlStyles.SupportsTransparentBackColor Or ControlStyles.ContainerControl, True)
         DoubleBuffered = True
         ''
-
-
-
         ''
     End Sub
     Protected Overrides Sub CreateHandle()
@@ -54,19 +51,11 @@ Public Class Custom_Form
 
 
         End If
-
-        ' Dim ag As Graphics = Me.CreateGraphics()
-
-        'ag.DrawString(FormText, New Font(FontFamily.GenericSansSerif, 8, FontStyle.Regular), New SolidBrush(Color.Black), New PointF(10, 7.5))
-        e.Graphics.DrawString(FormText, New Font(FontFamily.GenericSansSerif, 8, FontStyle.Regular), New SolidBrush(Color.Black), New PointF(10, 7.5))
+   e.Graphics.DrawString(FormText, New Font(FontFamily.GenericSansSerif, 8, FontStyle.Regular), New SolidBrush(Color.Black), New PointF(10, 7.5))
         Me.Text = FormText
 
-
-        '  ControlPaint.DrawBorder(e.Graphics, Me.ClientRectangle, Color.DeepSkyBlue, ButtonBorderStyle.Solid, )
-        ' e.Graphics.FillRectangle(k, mp)
-        '  If RoundedB Then
         If RoundedB Then
-            'Me.FormBorderStyle = FormBorderStyle.None
+            'Me.FormBorderStyle = FormBorderStyle.None  | TODO
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, Radius, Radius))
             '   End If
 
@@ -152,7 +141,7 @@ Public Class Custom_Form
 
 
 
-    ''from : https://stackoverflow.com/questions/18822067/rounded-corners-in-c-sharp-windows-forms
+    ''From : https://stackoverflow.com/questions/18822067/rounded-corners-in-c-sharp-windows-forms
 
     <DllImport("Gdi32.dll", EntryPoint:="CreateRoundRectRgn")>
     Private Shared Function CreateRoundRectRgn(ByVal nLeftRect As Integer, ByVal nTopRect As Integer, ByVal nRightRect As Integer, ByVal nBottomRect As Integer, ByVal nWidthEllipse As Integer, ByVal nHeightEllipse As Integer) As IntPtr
