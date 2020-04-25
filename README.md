@@ -19,3 +19,7 @@ Note :
 
 
 <a href="https://raw.githubusercontent.com/arsium/Custom-Winform-MakeWinformGreatAgain/master/S_1.png"><img src="https://raw.githubusercontent.com/arsium/Custom-Winform-MakeWinformGreatAgain/master/S_1.png"  height="600px" width="800px"/></a>
+
+<a href="https://raw.githubusercontent.com/arsium/Custom-Winform-MakeWinformGreatAgain/master/S_2.png"><img src="https://raw.githubusercontent.com/arsium/Custom-Winform-MakeWinformGreatAgain/master/S_2.png"  height="600px" width="800px"/></a>
+
+<a href="https://raw.githubusercontent.com/arsium/Custom-Winform-MakeWinformGreatAgain/master/S_3.png"><img src="https://raw.githubusercontent.com/arsium/Custom-Winform-MakeWinformGreatAgain/master/S_3.png"  height="600px" width="800px"/></a>
