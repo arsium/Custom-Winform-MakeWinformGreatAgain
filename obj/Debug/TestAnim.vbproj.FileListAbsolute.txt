@@ -1,0 +1,12 @@
+C:\Users\mehdi\source\repos\SocketTest\TestAnim\bin\Debug\TestAnim.exe.config
+C:\Users\mehdi\source\repos\SocketTest\TestAnim\bin\Debug\TestAnim.exe
+C:\Users\mehdi\source\repos\SocketTest\TestAnim\bin\Debug\TestAnim.pdb
+C:\Users\mehdi\source\repos\SocketTest\TestAnim\bin\Debug\TestAnim.xml
+C:\Users\mehdi\source\repos\SocketTest\TestAnim\obj\Debug\TestAnim.vbprojAssemblyReference.cache
+C:\Users\mehdi\source\repos\SocketTest\TestAnim\obj\Debug\TestAnim.Resources.resources
+C:\Users\mehdi\source\repos\SocketTest\TestAnim\obj\Debug\TestAnim.vbproj.GenerateResource.cache
+C:\Users\mehdi\source\repos\SocketTest\TestAnim\obj\Debug\TestAnim.vbproj.CoreCompileInputs.cache
+C:\Users\mehdi\source\repos\SocketTest\TestAnim\obj\Debug\TestAnim.exe
+C:\Users\mehdi\source\repos\SocketTest\TestAnim\obj\Debug\TestAnim.xml
+C:\Users\mehdi\source\repos\SocketTest\TestAnim\obj\Debug\TestAnim.pdb
+C:\Users\mehdi\source\repos\SocketTest\TestAnim\obj\Debug\TestAnim.Form1.resources
