@@ -7,7 +7,7 @@ Currently :
 
 
 * -Added Custom Rounded Border and custom radius
-* -Added Custom Border Color + 
+* -Added Painted Border + thickness
 * -Added MouseOver and MouseOut Custom Color
 * -Added Draggable Property for ALL form (you can drag and drop whereever you want)
 * -Added Title | TextForm as new property , don't use me.text , use this : Me.FormText = ""
