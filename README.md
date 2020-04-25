@@ -16,3 +16,6 @@ Currently :
 Note : 
 * -when you use Custom Rounded Border , set formborderstyle to none
 * -when you use Custom Rounded Border ,  don't use Colored border and vice-versa , there are conflicts with this 2 properties | this is beta
+
+
+<a href="https://raw.githubusercontent.com/arsium/Custom-Winform-MakeWinformGreatAgain/master/S_1.png"><img src="https://raw.githubusercontent.com/arsium/Custom-Winform-MakeWinformGreatAgain/master/S_1.png"  height="480px" width="600px"/></a>
