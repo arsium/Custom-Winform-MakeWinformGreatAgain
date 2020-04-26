@@ -36,8 +36,8 @@ Partial Class Form1
         Me.FormText = "Hello Good Sir"
         Me.MouseOver = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(235, Byte), Integer))
         Me.Name = "Form1"
-        Me.RadiusColorBorder = 4
-        Me.RoundedBorder = False
+        Me.PaintedBorders = False
+        Me.RadiusColorBorder = 6
         Me.Text = "Hello Good Sir"
         Me.ResumeLayout(False)
 

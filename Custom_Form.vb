@@ -78,8 +78,9 @@ Public Class Custom_Form
 
             Dim myPean As SolidBrush
             myPean = New SolidBrush(ColorB)
-            e.Graphics.FillRectangle(myPean, 10, 10, Me.Width - 22, 30)
-            e.Graphics.DrawString(FormText, New Font(FontFamily.GenericSansSerif, 8, FontStyle.Regular), New SolidBrush(FontC), New PointF(10, 15))
+            ' e.Graphics.FillRectangle(myPean, 10, 10, Me.Width - 22, 30)  | OLD
+            e.Graphics.FillRectangle(myPean, -1, -1, Me.Width + 2, 30)
+            e.Graphics.DrawString(FormText, New Font(FontFamily.GenericSansSerif, 8, FontStyle.Regular), New SolidBrush(FontC), New PointF(10, 7.5)) '' New PointF(10, 15)   |   OLD
 
         Else
 
@@ -87,7 +88,7 @@ Public Class Custom_Form
             Dim myPean As SolidBrush
             myPean = New SolidBrush(ColorB)
             e.Graphics.FillRectangle(myPean, -1, -1, Me.Width + 2, 30)
-            e.Graphics.DrawString(FormText, New Font(FontFamily.GenericSansSerif, 8, FontStyle.Regular), New SolidBrush(Color.Black), New PointF(10, 7.5))
+            e.Graphics.DrawString(FormText, New Font(FontFamily.GenericSansSerif, 8, FontStyle.Regular), New SolidBrush(FontC), New PointF(10, 7.5))
 
         End If
 
@@ -103,7 +104,8 @@ Public Class Custom_Form
         '  If RoundedB Then
         If RoundedB Then
             'Me.FormBorderStyle = FormBorderStyle.None
-            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, Radius, Radius))
+
+            Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, Radius_AZ, Radius_AZ))
             '   End If
 
         End If
@@ -167,14 +169,14 @@ Public Class Custom_Form
     End Property
 
 
-    Private Radius As Integer = 20
+    Private Radius_AZ As Integer = 20
     Property RadiusRoundedBorder As Integer
         Get
-            Return Radius
+            Return Radius_AZ
             Me.Refresh()
         End Get
         Set(value As Integer)
-            Radius = value
+            Radius_AZ = value
             Me.Refresh()
         End Set
     End Property
