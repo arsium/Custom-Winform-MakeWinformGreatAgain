@@ -5,6 +5,11 @@ This custom winform is all what I needed when I want to make user-friendly and b
 
 * If you want to use it , just add Custom_Winform in your Project !
 
+Update 26-04-2020 : 
+
+* -Added Refresh event to see the application of properties changed without closing form and re-open
+* -Added ColoredBorder Property (same for main rectangle actually)
+
 Currently :
 
 
