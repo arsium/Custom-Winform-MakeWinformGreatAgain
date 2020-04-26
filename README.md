@@ -24,6 +24,7 @@ Currently :
 
 Note : 
 * -when you use Custom Rounded Border , set formborderstyle to none
+* -This is just zone color , so if you but any controls like button , it will hide the border
 
 
 
