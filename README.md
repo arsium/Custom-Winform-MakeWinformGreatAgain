@@ -9,6 +9,8 @@ Update 26-04-2020 :
 
 * -Added Refresh event to see the application of properties changed without closing form and re-open
 * -Added ColoredBorder Property (same for main rectangle actually)
+* -Added Font Color
+* -Minors Bugs corrected
 
 Currently :
 
@@ -22,7 +24,7 @@ Currently :
 
 Note : 
 * -when you use Custom Rounded Border , set formborderstyle to none
-* -when you use Custom Rounded Border ,  don't use Colored border and vice-versa , there are conflicts with this 2 properties | this is beta
+
 
 
 <a href="https://raw.githubusercontent.com/arsium/Custom-Winform-MakeWinformGreatAgain/master/S_1.png"><img src="https://raw.githubusercontent.com/arsium/Custom-Winform-MakeWinformGreatAgain/master/S_1.png"  height="500px" width="700px"/></a>
