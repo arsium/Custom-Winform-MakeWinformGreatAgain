@@ -10,3 +10,5 @@ C:\Users\mehdi\source\repos\SocketTest\TestAnim\obj\Debug\TestAnim.exe
 C:\Users\mehdi\source\repos\SocketTest\TestAnim\obj\Debug\TestAnim.xml
 C:\Users\mehdi\source\repos\SocketTest\TestAnim\obj\Debug\TestAnim.pdb
 C:\Users\mehdi\source\repos\SocketTest\TestAnim\obj\Debug\TestAnim.Form1.resources
+C:\Users\mehdi\source\repos\SocketTest\TestAnim\obj\Debug\TestAnim.Custom_Form.resources
+C:\Users\mehdi\source\repos\SocketTest\TestAnim\obj\Debug\TestAnim.Form3.resources

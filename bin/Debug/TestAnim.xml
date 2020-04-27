@@ -22,5 +22,11 @@ TestAnim
   les recherches de ressources à l'aide de cette classe de ressource fortement typée.
 </summary>
 </member>
+<member name="F:TestAnim.Custom_Form.Shake">
+From https://www.youtube.com/watch?v=i_ypbKLU4zY
+</member>
+<member name="M:TestAnim.Custom_Form.SL_ANim(System.Int32,System.Windows.Forms.Control)">
+From  : https://www.youtube.com/watch?v=MYss77nWr5A
+</member>
 </members>
 </doc>
