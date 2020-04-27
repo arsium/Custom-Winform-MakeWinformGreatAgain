@@ -5,6 +5,15 @@ This custom winform is all what I needed when I want to make user-friendly and b
 
 * If you want to use it , just add Custom_Winform in your Project !
 
+Update 27-04-2020
+
+* -Added Container (inherit panel , you can't remove it)
+* -Removed Painted Border + thickness
+* -Corrected UI misalignments with border
+* -Added Beta Animation for control : FadeIn , FadeOut ,,Shake , Vertical Slide and Horizontal Slide
+
+
+
 Update 26-04-2020 : 
 
 * -Added Refresh event to see the application of properties changed without closing form and re-open
