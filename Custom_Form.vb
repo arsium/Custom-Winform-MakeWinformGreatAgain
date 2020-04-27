@@ -83,15 +83,16 @@ Public Class Custom_Form
 
         Container_.TabIndex = 4500
 
-        Container_.Location = (New Point(5, 29))
-        Container_.Size = New Size(Me.Width - 11, Me.Height - 34)
+        Container_.Size = New Size(Me.Width - 14, Me.Height - 36)
+        Container_.Location = (New Point(7, 29))
+
+        'Container_.Size = New Size(500, 500)
         'Container_.BackColor = Color.Black
         ' t.Dock = DockStyle.Fill
         't.Height = 100
         't.Width = 100
 
 
-        Me.Controls.Add(Container_)
 
 
 
@@ -118,17 +119,27 @@ Public Class Custom_Form
 
                 Dim myPen As Pen
                 myPen = New Pen(ColorB, RadiusC)
-                e.Graphics.DrawRectangle(myPen, 1, 1, Me.Width - 4, Me.Height - 3)
+                e.Graphics.DrawRectangle(myPen, 3, -2, Me.Width - 8, Me.Height - 2)
+                ' e.Graphics.DrawRectangle(myPen, 3, -2, Me.Width - 7, Me.Height - 2)
+
+                ''TO CORRECT
+
+                '  Container_.Size = New Size(Me.Width - 11, Me.Height - 34)
+
+
                 Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, Radius_AZ, Radius_AZ))
                 '   Me.Padding = New Padding(5, 29, 6, 6)
                 Me.Padding = New Padding(5, 29, 6, 5)
+
             Else
 
                 Dim myPen As Pen
                 myPen = New Pen(ColorB, RadiusC)
-                e.Graphics.DrawRectangle(myPen, 1, 1, Me.Width - 4, Me.Height - 3)
-                '    Me.Padding = New Padding(5, 29, 6, 6)
-                Me.Padding = New Padding(5, 29, 6, 5)
+                e.Graphics.DrawRectangle(myPen, 3, -2, Me.Width - 7, Me.Height - 2)
+                '    Me.Padding = New Padding(5, 29, 6, 5)
+
+
+
             End If
 
         Else
@@ -141,8 +152,10 @@ Public Class Custom_Form
             myPean = New SolidBrush(ColorB)
             e.Graphics.FillRectangle(myPean, -1, -1, Me.Width + 2, 30)
             e.Graphics.DrawString(FormText, New Font(FontFamily.GenericSansSerif, 8, FontStyle.Regular), New SolidBrush(FontC), New PointF(10, 7.5))
+
             Container_.Location = (New Point(0, 29))
             Container_.Size = New Size(Me.Width, Me.Height - 30)
+
             If RoundedB Then
                 'Me.FormBorderStyle = FormBorderStyle.None
                 ' Dim myPen As Pen
@@ -182,6 +195,7 @@ Public Class Custom_Form
 
 
 
+        Me.Controls.Add(Container_)
 
 
 
