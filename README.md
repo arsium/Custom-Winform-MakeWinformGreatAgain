@@ -31,4 +31,7 @@ Currently :
 
 Note : 
 * -when you use Custom Rounded Border , set formborderstyle to none
-* -when you use Custom Rounded Border ,  don't use Colored border and vice-versa , there are conflicts with this 2 properties | this is beta
+* -when you use Custom Rounded Border , don't use Colored border and vice-versa , there are conflicts with this 2 properties | this is beta
+* -it will be often updated
+* -I can't make dropshadow , just don't ask for this too complicated shit
+* -This is just zone color , so if you but any controls like button , it will hide the border
