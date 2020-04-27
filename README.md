@@ -10,21 +10,23 @@ Updated 27-04-2020
 * -Corrected : Misalignements with borders and rounded radius + property not working
 * -Added [BETA] animations : FadeIn , FadeOut , Shake , Horizontal Slide and vertical Slide
 
+Known bugs | misalignement : rounded borders with painted borders
+
 
 Update 26-04-2020 :
 
--Added Refresh event to see the application of properties changed without closing form and re-open
--Added ColoredBorder Property (same for main rectangle actually)
--Added Font Color
--Minors Bugs corrected
+* -Added Refresh event to see the application of properties changed without closing form and re-open
+* -Added ColoredBorder Property (same for main rectangle actually)
+* -Added Font Color
+* -Minors Bugs corrected
 
 Currently :
 
--Added Custom Rounded Border and custom radius
--Added Painted Border (custom color not already done) + thickness
--Added MouseOver and MouseOut Custom Color
--Added Draggable Property for ALL form (you can drag and drop whereever you want)
--Added Title | TextForm as new property , don't use me.text , use this : Me.FormText = ""
+* -Added Custom Rounded Border and custom radius
+* -Added Painted Border (custom color not already done) + thickness
+* -Added MouseOver and MouseOut Custom Color
+* -Added Draggable Property for ALL form (you can drag and drop whereever you want)
+* -Added Title | TextForm as new property , don't use me.text , use this : Me.FormText = ""
 
 
 Note : 
