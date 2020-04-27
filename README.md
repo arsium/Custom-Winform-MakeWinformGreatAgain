@@ -5,7 +5,7 @@ This custom winform is all what I needed when I want to make user-friendly and b
 
 Updated 27-04-2020
 
-* -Added Container
+* -Added Container (inhertits panel , you can't delete it)
 * -Removed Painted Border thickness (because it creates misalignements actually)
 * -Corrected : Misalignements with borders and rounded radius + property not working
 * -Added [BETA] animations : FadeIn , FadeOut , Shake , Horizontal Slide and vertical Slide
