@@ -10,7 +10,7 @@ Updated 27-04-2020
 * -Corrected : Misalignements with borders and rounded radius + property not working
 * -Added [BETA] animations : FadeIn , FadeOut , Shake , Horizontal Slide and vertical Slide
 
-Known bugs | misalignement : rounded borders with painted borders
+Known bugs | misalignement : rounded borders with painted borders : right border is smaller than left border
 
 
 Update 26-04-2020 :
