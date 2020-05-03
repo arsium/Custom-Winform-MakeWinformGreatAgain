@@ -12,6 +12,8 @@ Update 03-05-2020 :
 
 * -Added Custom Panel : draggable property ,  rounded border + radius , gradient property (bottom to top , top to bottom , left to right , right to left) 
 
+* -Improved Animations 
+
 
 Updated 27-04-2020 : 
 
