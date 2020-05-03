@@ -3,7 +3,17 @@ Custom_Winform By Arsium
 
 This custom winform is all what I needed when I want to make user-friendly and beautiful interface in order to avoid Xaml , WPF or whatever you want. I will add more controls later like custom tabpage ,  button , ...
 
-Updated 27-04-2020
+Update 03-05-2020 : 
+
+* -[BETA]Added Hexagon Property to Custom Form (do not use with Rounded Border)
+* -Corrected Some bugs with Rounded Borders and ColorBorders (do not use the 2 in same time)
+
+* -Added Custom Button  :  rounded border + radius , gradient property (bottom to top , top to bottom , left to right , right to left)  , mouseover color property , mouseleave color property
+
+* -Added Custom Panel : draggable property ,  rounded border + radius , gradient property (bottom to top , top to bottom , left to right , right to left) 
+
+
+Updated 27-04-2020 : 
 
 * -Added Container (inhertits panel , you can't delete it)
 * -Removed Painted Border thickness (because it creates misalignements actually)
