@@ -188,9 +188,37 @@ Public Class Custom_Form
 
             Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, Radius_AZ, Radius_AZ))
 
+
+
         End If
 
+        If PolyB Then
 
+            'Mesures from : https://stackoverflow.com/questions/40570607/drawing-hexagon-in-vb-net
+            Dim p(5) As Point
+
+            Dim v As Integer = CInt(Me.Height / 2 * Math.Sin(30 * Math.PI / 180))
+            p(0) = New Point(0, Me.Height \ 2)
+
+            p(1) = New Point(v, Me.Height)
+            p(2) = New Point(Me.Width - v, Me.Height)
+            p(3) = New Point(Me.Width, Me.Height \ 2)
+            p(4) = New Point(Me.Width - v, 0)
+            p(5) = New Point(v, 0)
+
+
+            Region = System.Drawing.Region.FromHrgn(CreatePolygonRgn(p, 6, 2))
+
+
+
+
+            '   Dim ndj As Region = System.Drawing.Region.FromHrgn(CreatePolygonRgn(p, 6, 2))
+
+            e.Graphics.DrawPolygon(New Pen(New SolidBrush(Color.DeepSkyBlue), 10), p)
+
+            RoundedB = False
+
+        End If
 
 
 
@@ -290,6 +318,22 @@ Public Class Custom_Form
 #End Region
 
 
+
+
+    Private PolyB As Boolean = False
+
+
+    Property HexagonForm As Boolean
+        Get
+            Return PolyB
+            Me.Refresh()
+        End Get
+        Set(value As Boolean)
+            PolyB = value
+            Me.Refresh()
+        End Set
+    End Property
+
     Private TextF As String = "Custom_Form"
     Property FormText As String
         Get
@@ -359,26 +403,17 @@ Public Class Custom_Form
     End Property
 
 
+#Region "NativeAPI"
 
+    <DllImport("gdi32.dll")>
+    Private Shared Function CreatePolygonRgn(ByVal lppt As Point(), ByVal cPoints As Integer, ByVal fnPolyFillMode As Integer) As IntPtr
 
-
-
-
-
-    ''from : https://stackoverflow.com/questions/18822067/rounded-corners-in-c-sharp-windows-forms
+    End Function
 
     <DllImport("Gdi32.dll", EntryPoint:="CreateRoundRectRgn")>
     Private Shared Function CreateRoundRectRgn(ByVal nLeftRect As Integer, ByVal nTopRect As Integer, ByVal nRightRect As Integer, ByVal nBottomRect As Integer, ByVal nWidthEllipse As Integer, ByVal nHeightEllipse As Integer) As IntPtr
 
     End Function
-
-
-
-
-
-
-
-
 
 
     ''Native API adpated from  : https://github.com/RiyadPathan/DragControl/blob/master/DragControl.vb
@@ -421,18 +456,9 @@ Public Class Custom_Form
 
         End If
     End Sub
-    Protected Overrides Sub OnMouseUp(e As MouseEventArgs)
-        ' Me.BackColor = Color_A
-
-        Dim flag As Boolean = e.Button = MouseButtons.Left
-        '  Me.BackColor = Color_A
-        If flag Then
-            '   Me.BackColor = Color_A
 
 
-        End If
-
-    End Sub
+#End Region
 
     Private DragB As Boolean = True
     Property Draggable As Boolean
@@ -460,9 +486,6 @@ Public Class Custom_Form
     Private Sub MOUSEOHVHANDLER(ByVal sender As Object, e As EventArgs) Handles Me.MouseHover
         Me.BackColor = MouseOVC
     End Sub
-
-
-
     Private MouseOVCL As Color = Color.White
     Property MouseOut As Color
         Get
@@ -489,18 +512,6 @@ Public Class Custom_Form
 
     Private Sub MOUSEOHVLHANDLERContainer_(ByVal sender As Object, e As EventArgs) Handles Container_.MouseLeave
         Container_.BackColor = Me.MouseOVCL
-
-    End Sub
-
-
-    Private Sub InitializeComponent()
-        Me.SuspendLayout()
-        '
-        'Custom_Form
-        '
-        Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Name = "Custom_Form"
-        Me.ResumeLayout(False)
 
     End Sub
 
